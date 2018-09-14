@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, Leni</title>
+    <meta name="description" content="Hello, Leni">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="400" height="400" color="#7BC8A4"></a-plane>
+      <a-sky color="#0aa"></a-sky>
+      <a-entity camera="active: true" look-controls wasd-controls position="0 5 0"></a-entity>
+      <a-assets>
+        <a-asset-item id="leni" src="leni.dae"></a-asset-item>
+      </a-assets>
+      <a-entity  collada-model="#leni" rotation="240 15 0" position="0 7 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
